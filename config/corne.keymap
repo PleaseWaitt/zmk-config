@@ -56,12 +56,12 @@
                 adjust_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |     |     |     |     |     |   |     |     |     |     |     | BKSP |
-// | CTRL |     |     |     |     |     |   |     |     |     |     |     |      |
+// | CTRL |     |     |     | CAPS|     |   |     |     |     |     |     |      |
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  ESC  &kp trans &kp trans &kp trans &kp trans &kp trans   &kp trans &kp trans &kp trans &kp trans &kp trans &kp BSPC
-   &kp LCTRL &kp trans &kp trans &kp trans &kp trans &kp trans   &kp trans &kp trans &kp trans &kp trans &kp trans &kp trans
+   &kp LCTRL &kp trans &kp trans &kp trans &kp CAPS &kp trans   &kp trans &kp trans &kp trans &kp trans &kp trans &kp trans
    &kp LSHFT &kp trans &kp trans &kp trans &kp trans &kp trans   &kp trans &kp trans &kp trans &kp trans &kp trans &kp trans
                     	         &kp LGUI  &trans    &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
