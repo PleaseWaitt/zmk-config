@@ -50,6 +50,20 @@
    &kp LSHFT  &kp K_UNDO   &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans         &trans   &kp LEFT &kp DOWN &kp RIGHT  &trans  &kp RSHFT
                           	         &kp LGUI      &trans        &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
+                
+                };
+                adjust_layer {
+// -----------------------------------------------------------------------------------------
+// | TAB  |     |     |     |     |     |   |     |     |     |     |     | BKSP |
+// | CTRL |     |     |     |     |     |   |     |     |     |     |     | BTCLR|
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     | SHFT |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp TAB    &trans   &trans  &trans   &trans  &trans       &trans  &trans  &trans  &trans  &trans  &kp BSPC
+   &kp LCTRL  &trans   &trans  &trans   &trans  &trans       &trans  &trans  &trans  &trans  &trans  &bt BT_CLR
+   &kp LSHFT  &trans   &trans  &trans   &trans  &trans       &trans  &trans  &trans  &trans  &trans  &kp RSHFT
+                               &kp LGUI &trans  &kp SPACE    &kp RET &trans  &kp RALT
+                        >;
                 };
         };
 };
