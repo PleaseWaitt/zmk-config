@@ -47,7 +47,7 @@
                         bindings = <
    &kp TAB   &kp MINUS  &kp EQUAL &kp LBKT   &kp RBKT    &kp BSLH  &trans  &trans   &trans   &trans     &trans  &kp BSPC
    &kp LCTRL &kp GRAVE  &trans    &trans     &trans      &trans    &trans  &kp HOME &kp UP   &kp END    &trans  &bt BT_CLR
-   &kp LSHFT &kp K_UNDO &kp K_CUT &kp K_COPY &kp K_PASTE &trans    &trans  &kp LEFT &kp DOWN &kp RIGHT  &trans  &kp RSHFT
+   &kp LSHFT &kp K_UNDO &kp K_CUT &kp K_COPY &kp K_PASTE &trans    &kp LEFT &kp LEFT &kp DOWN &kp RIGHT  &trans  &kp RSHFT
                                   &kp LGUI   &mo 3       &kp SPACE &kp RET &trans   &kp RALT
                         >;
                 
