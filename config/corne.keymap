@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>
 //&mt {
 //    tapping-term-ms = <250>;
 //};
@@ -33,12 +32,12 @@
 // | ESC  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BTCLR|
 // | BTCLR | BT1 | BT2 | BT3 | BT4 | BT5 |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | RESET |     | SPC |   | ENT | ADJ | ALT |
+//                    | GUI |     | SPC |   | ENT | ADJ | ALT |
                         bindings = <
    &kp  ESC  &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT    &kp CARET &kp AMPS &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &kp LCTRL &kp N1       &kp N2       &kp N3       &kp N4       &kp N5       &kp N6    &kp N7   &kp N8          &kp N9   &kp N0   &bt BT_CLR
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp UNDER &kp PLUS &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	     &reset &trans   &kp SPACE   &kp RET   &mo 3    &kp RALT
+                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &mo 3    &kp RALT
                         >;
                 };
                 raise_layer {
@@ -46,12 +45,12 @@
 // | TAB  |  -  |  =  |  [  |  ]  |  \  |   |     |     |     |     |     | BKSP |
 // | CTRL |  `  |     |     |     |     |   |     | HOME| UP  | END |     | BTCLR|
 // | SHFT | UNDO| CUT | CPY | PSTE|     |   |     | LFT | DOWN| RGHT|     | SHFT |
-//                    | GUI | ADJ | SPC |   | ENT |     | RESET |
+//                    | GUI | ADJ | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TAB   &kp MINUS  &kp EQUAL &kp LBKT   &kp RBKT    &kp BSLH  &trans  &trans   &trans   &trans     &trans  &kp BSPC
    &kp LCTRL &kp GRAVE  &trans    &trans     &trans      &trans    &trans  &kp HOME &kp UP   &kp END    &trans  &bt BT_CLR
    &kp LSHFT &kp K_UNDO &kp K_CUT &kp K_COPY &kp K_PASTE &trans    &kp LEFT &kp LEFT &kp DOWN &kp RIGHT  &trans  &kp RSHFT
-                                  &kp LGUI   &mo 3       &kp SPACE &kp RET &trans   &reset
+                                  &kp LGUI   &mo 3       &kp SPACE &kp RET &trans   &kp RALT
                         >;
                 
                 };
