@@ -44,7 +44,7 @@
 // |      | BTCLR | BT1  | BT2  |  BT3  |        |                             |  7  |  8  |  9  |  +  |  =  |      |
 // |      | SHIFT | HOME |  UP  |  END  | PG UP  |                             |  4  |  5  |  6  |  -  |  _  |      |
 // |      |  DEL  | LEFT | DOWN | RIGHT | PG DWN |                             |  1  |  2  |  3  |  *  |  #  |      |
-//                        | GUI |       | SPC    |                             |  0  |     | ALT |
+//                       | GUI  |       | SPC    |                             |  0  |     | ALT |
                         bindings = <
    &trans    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans         &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS     &kp EQUAL       &trans
    &trans    &kp LSHFT  &kp HOME     &kp UP       &kp END      &kp PG_UP      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS    &kp UNDER       &trans
@@ -64,6 +64,20 @@
    &trans  &trans    &trans    &trans   &kp LBKT        &kp RBKT  &kp DLLR  &kp PRCNT  &kp CARET  &kp SQT  &kp DQT  &trans
    &trans  &trans    &trans    &trans   &kp LPAR        &kp RPAR  &kp EXCL  &kp AT     &kp HASH   &trans   &kp BSLH &trans
                      &kp LGUI  &trans   &kp SPACE       &kp RET   &trans    &kp RALT
+                        >;
+                };
+
+                adjust_layer {
+// -----------------------------------------------------------------------------------------
+// |      |RESET |     |     |     |     |               |  F7  | F8 | F9 | F12 |    |      |
+// |      |REBOOT|     | MUTE|     |     |               |  F4  | F5 | F6 | F11 |    |      |
+// |      |      |PREV |PAUSE| NEXT|     |               |  F1  | F2 | F3 | F10 |    |      |
+//                     | GUI |     | SPC |               |      |    |    |
+                        bindings = <
+    &trans &sys_reset  &trans     &trans     &trans      &trans          &kp F7      &kp F8      &kp F9      &kp F12     &trans &trans 
+    &trans &bootloader &trans     &kp C_MUTE &trans      &trans          &kp F4      &kp F5      &kp F6      &kp F11     &trans &trans 
+    &trans &trans      &kp C_PREV &kp C_PP   &kp C_NEXT  &trans          &kp F1      &kp F2      &kp F3      &kp F10     &trans &trans     
+                                      &trans      &trans          &trans      &trans
                         >;
                 };
         };
