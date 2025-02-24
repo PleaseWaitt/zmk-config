@@ -87,14 +87,14 @@
                  sym_layer {
  // -----------------------------------------------------------------------------------------
  // |      | ESC |     |     |  {  |  }  |                               |  &  |  *  |  (  |  '  |  "  |      |
- // |      |     |     |     |  [  |  ]  |                               |  $  |  %  |  ^  |  '  |  "  |      |
- // |      |     |     |     |  (  |  )  |                               |  !  |  @  |  £  |     |  \  |      |
+ // |      |     |     |TV UP|  [  |  ]  |                               |  $  |  %  |  ^  |  '  |  "  |      |
+ // |      |     |TV LF|TV DN|TV RT|     |                               |  !  |  @  |  £  |     |  \  |      |
  //                    | GUI |     | SPC |                               | ENT |     | ALT |
                          bindings = <
-    &trans  &kp ESC   &trans    &trans   &kp LBRC       &kp RBRC     &kp AMPS  &kp STAR          &kp LPAR        &kp SQT         &kp DQT  &trans
-    &trans  &trans    &trans    &trans   &mt LSHFT LBKT &kp RBKT     &kp DLLR  &mt RSHFT PRCNT   &mt RGUI CARET  &mt RALT SQT    &kp DQT  &trans
-    &trans  &trans    &trans    &trans   &kp LPAR       &kp RPAR     &kp EXCL  &kp AT            &kp HASH        &trans          &kp BSLH &trans
-                                &kp LGUI &mo ADJ        &kp SPACE    &kp RET   &trans            &kp RALT
+    &trans  &kp ESC &trans  &trans       &kp LBRC       &kp RBRC     &kp AMPS  &kp STAR          &kp LPAR        &kp SQT       &kp DQT  &trans
+    &trans  &trans  &trans  &kp LG(UP)   &mt LSHFT LBKT &kp RBKT     &kp DLLR  &mt RSHFT PRCNT   &mt RGUI CARET  &mt RALT SQT  &kp DQT  &trans
+    &trans  &trans  &td2    &kp LG(DOWN) &td3           &trans       &kp EXCL  &kp AT            &kp HASH        &trans        &kp BSLH &trans
+                            &kp LGUI     &mo ADJ        &kp SPACE    &kp RET   &trans            &kp RALT
                          >;
                  };
  
